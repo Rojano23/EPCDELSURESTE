@@ -39,7 +39,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
   const descriptionStyle: CSSProperties = {
     margin: 0,
-    color: theme.textSecondaryColor,
+    color: theme.textOnDarkColor,
     fontSize: '0.95rem',
     lineHeight: 1.65,
   };

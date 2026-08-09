@@ -1,5 +1,6 @@
 import type { Company } from '../types';
 
+
 export const company: Company = {
   companyName: 'EPC DEL SURESTE, SAPI DE CV',
   tagline: 'Ingeniería. Procura. Ejecución. Soluciones integrales para la industria energética.',
@@ -18,7 +19,7 @@ export const company: Company = {
     href: '#servicios',
     ariaLabel: 'Ir a la sección de servicios',
   },
-  heroImage: '',
+  heroImage: new URL('../assets/cliente/EPC2.jpg', import.meta.url).href,
   heroImageAlt: 'Ilustración corporativa temporal para representar el Hero principal.',
   heroBackgroundImage: '',
   heroVideoBackground: '',

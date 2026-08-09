@@ -45,8 +45,8 @@ export function Footer() {
       >
         <div className="footer-grid" style={{ display: 'grid', gap: designTokens.spacing.lg }}>
           <section aria-label="Identidad corporativa">
-            <h2 style={{ margin: 0, fontSize: '1.125rem', color: theme.textColor }}>{company.companyName}</h2>
-            <p style={{ margin: `${designTokens.spacing.xs} 0 0`, color: theme.textSecondaryColor }}>
+            <h2 style={{ margin: 0, fontSize: '1.125rem', color: theme.textOnDarkColor }}>{company.companyName}</h2>
+            <p style={{ margin: `${designTokens.spacing.xs} 0 0`, color: theme.textOnDarkColor }}>
               {company.tagline}
             </p>
           </section>
@@ -99,7 +99,7 @@ export function Footer() {
                       href={entry.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      style={{ color: theme.primaryColor, textDecoration: 'none' }}
+                      style={{ color: theme.textOnDarkColor, textDecoration: 'none' }}
                       aria-label={`Abrir ${entry.label} en nueva pestaña`}
                     >
                       {entry.label}
