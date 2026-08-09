@@ -43,7 +43,7 @@ export const designTokens: DesignTokens = {
     textSecondary: '#64748B',
 
     textOnDark: '#FFFFFF',
-    muted: '#D8E0E5',
+    muted: '#475569',
 
     border: '#D8E0E5',
   },

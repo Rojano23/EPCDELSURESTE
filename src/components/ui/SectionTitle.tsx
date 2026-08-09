@@ -33,7 +33,7 @@ export function SectionTitle({
   const subtitleStyle: CSSProperties = {
     marginTop: designTokens.spacing.sm,
     marginBottom: 0,
-    color: theme.textSecondaryColor,
+    color: theme.textColor,
     fontSize: 'clamp(0.95rem, 2.5vw, 1.125rem)',
   };
 

@@ -25,7 +25,7 @@ function getVariantStyle(variant: ButtonVariant): CSSProperties {
   if (variant === 'primary') {
     return {
       backgroundColor: theme.primaryColor,
-      color: theme.secondaryColor,
+      color: theme.textOnDarkColor,
       border: `1px solid ${theme.primaryColor}`,
       boxShadow: theme.shadow,
     };
@@ -34,7 +34,7 @@ function getVariantStyle(variant: ButtonVariant): CSSProperties {
   if (variant === 'secondary') {
     return {
       backgroundColor: theme.secondaryColor,
-      color: theme.textColor,
+      color: theme.textOnDarkColor,
       border: `1px solid ${theme.borderColor}`,
       boxShadow: theme.shadow,
     };
@@ -42,7 +42,7 @@ function getVariantStyle(variant: ButtonVariant): CSSProperties {
 
   return {
     backgroundColor: 'transparent',
-    color: theme.textColor,
+    color: theme.textOnDarkColor,
     border: `1px solid ${theme.borderColor}`,
   };
 }

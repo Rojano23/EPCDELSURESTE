@@ -7,7 +7,7 @@ export const industries: Industry[] = [
     shortDescription: 'Soluciones orientadas a procesos industriales y control de planta.',
     detailedDescription:
       'Diseño e implementación de sistemas de automatización, control y monitoreo para entornos industriales exigentes.',
-    featured: true,
+    featured: false,
   },
   {
     id: 'engineering',
@@ -17,6 +17,7 @@ export const industries: Industry[] = [
       'Desarrollo de proyectos de instrumentación, control, telecomunicaciones y soporte técnico para sectores productivos.',
     featured: true,
   },
+
   {
     id: 'energy',
     title: 'Energía y utilities',
@@ -25,6 +26,7 @@ export const industries: Industry[] = [
       'Soluciones para la gestión eficiente de recursos energéticos, redes y servicios de infraestructura crítica.',
     featured: false,
   },
+
   {
     id: 'oil-gas',
     title: 'Oil \u0026 Gas',
