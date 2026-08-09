@@ -62,7 +62,7 @@ export function Navbar() {
               display: 'inline-flex',
               alignItems: 'center',
               gap: designTokens.spacing.sm,
-              color: theme.textOnDarkColor,
+              color: theme.textColor,
               textDecoration: 'none',
               fontFamily: theme.fontFamilyHeading,
               fontWeight: 700,
