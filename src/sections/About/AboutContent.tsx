@@ -53,7 +53,7 @@ export function AboutContent({ company }: AboutContentProps) {
           >
             Misión
           </h3>
-          <p style={{ margin: 0, color: theme.textSecondaryColor, lineHeight: 1.6 }}>
+          <p style={{ margin: 0, color: theme.textOnDarkColor, lineHeight: 1.6 }}>
             {company.mission}
           </p>
         </article>
@@ -78,7 +78,7 @@ export function AboutContent({ company }: AboutContentProps) {
           >
             Visión
           </h3>
-          <p style={{ margin: 0, color: theme.textSecondaryColor, lineHeight: 1.6 }}>
+          <p style={{ margin: 0, color: theme.textOnDarkColor, lineHeight: 1.6 }}>
             {company.vision}
           </p>
         </article>

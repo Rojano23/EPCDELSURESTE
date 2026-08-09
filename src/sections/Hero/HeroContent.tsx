@@ -49,7 +49,7 @@ export function HeroContent({ company }: HeroContentProps) {
           onClick={() => handleCtaClick(company.secondaryCTA.href)}
           className="focus-ring"
           style={{
-            color: theme.textColor,
+            color: theme.textOnDarkColor,
           }}
         >
           {company.secondaryCTA.label}

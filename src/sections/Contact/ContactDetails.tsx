@@ -32,8 +32,8 @@ export function ContactDetails({ company }: ContactDetailsProps) {
           <InfoCard key={item.title} title={item.title} description={item.description} ariaLabel={item.title} />
         ))}
       </div>
-      <p style={{ margin: 0, color: theme.textOnDarkColor, lineHeight: 1.6 }}>
-        La información se mantiene centralizada para facilitar reutilizar la plantilla entre clientes.
+      <p style={{ margin: 0, color: theme.textSecondaryColor, lineHeight: 1.6 }}>
+        Contáctanos para una cotización a nuestro correo de ventas.
       </p>
     </section>
   );

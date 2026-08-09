@@ -27,7 +27,7 @@ export function SectionTitle({
     fontFamily: theme.fontFamilyHeading,
     fontWeight: 700,
     fontSize: 'clamp(1.5rem, 4vw, 2.25rem)',
-    color: theme.textColor,
+    color: theme.textOnDarkColor,
   };
 
   const subtitleStyle: CSSProperties = {

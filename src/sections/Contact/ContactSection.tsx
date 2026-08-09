@@ -17,7 +17,7 @@ export function ContactSection() {
           as="h2"
           eyebrow="Estamos listos para conversar"
           title="Contacto"
-          subtitle="Canales configurables para conectar con tu equipo y futuras integraciones comerciales."
+          subtitle="Nuestro equipo está listo para conectar con tu equipo y futuras integraciones comerciales."
         />
 
         <div className="contact-grid" style={{ display: 'grid', gap: designTokens.spacing.lg }}>
