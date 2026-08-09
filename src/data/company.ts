@@ -1,13 +1,13 @@
 import type { Company } from '../types';
 
 export const company: Company = {
-  companyName: 'DEV-WEBPAGES-RX23',
-  tagline: 'Plantilla reutilizable para sitios web corporativos.',
+  companyName: 'EPC DEL SURESTE, SAPI DE CV',
+  tagline: 'Ingeniería. Procura. Ejecución. Soluciones integrales para la industria energética.',
   description:
-    'Base técnica para construir sitios web corporativos con enfoque en reutilización, configuración y mantenimiento.',
-  heroTitle: 'Sitios corporativos configurables para crecer sin reconstruir.',
+    'EPC DEL SURESTE, SAPI DE CV es una empresa dedicada a brindar soluciones integrales para la industria energética, con enfoque en ingeniería, procura y ejecución.',
+  heroTitle: 'Ingeniería y soluciones para la industria energética',
   heroDescription:
-    'Base moderna, profesional y reusable para desplegar presencia digital corporativa con arquitectura preparada para múltiples clientes.',
+    'Desarrollamos proyectos integrales de ingeniería, procura, construcción, instrumentación y sistemas de control para la industria de petróleo y gas, así como para diversos sectores industriales. Combinamos experiencia técnica, conocimiento del campo y capacidad de ejecución para entregar soluciones confiables, eficientes y orientadas a resultados.',
   primaryCTA: {
     label: 'Iniciar proyecto',
     href: '#contacto',
@@ -26,13 +26,13 @@ export const company: Company = {
   heroBadges: [],
   heroTrustIndicators: [],
   aboutTitle: 'Quiénes somos',
-  aboutSubtitle: 'Arquitectura reutilizable para crecer con cada cliente.',
+  aboutSubtitle: 'Experiencia que transforma proyectos en resultados.',
   aboutDescription:
-    'DEV-WEBPAGES-RX23 es una plantilla corporativa diseñada para transformarse rápidamente en el sitio web de cualquier empresa modificando únicamente configuración, branding y contenido.',
+    'Somos una empresa especializada en Ingeniería, Procura y Construcción (EPC), con amplia experiencia en la industria de petróleo y gas y capacidades aplicables a otros sectores industriales. Nuestro conocimiento en sistemas de control, automatización e instrumentación nos permite integrar soluciones desde la ingeniería y suministro de equipos hasta la instalación, puesta en marcha y soporte en campo. Trabajamos con un enfoque práctico, técnico y orientado a las necesidades reales de cada proyecto, buscando generar valor, confiabilidad y continuidad operativa para nuestros clientes.',
   mission:
-    'Entregar sitios web corporativos modernos, profesionales y escalables en tiempos reducidos, sin sacrificar calidad ni mantenibilidad.',
+    'Proporcionar soluciones integrales de ingeniería, procura, construcción, instrumentación, control y servicios especializados para la industria de petróleo, gas y otros sectores industriales, atendiendo las necesidades operativas y de mantenimiento de nuestros clientes con experiencia, innovación y excelencia técnica, contribuyendo a la confiabilidad, eficiencia y continuidad de sus operaciones.',
   vision:
-    'Convertir la plantilla en una plataforma reutilizable capaz de soportar múltiples clientes con arquitectura limpia y evolución continua.',
+    'Consolidarnos como una empresa líder y referente en soluciones integrales para la industria energética e industrial, reconocida por nuestra capacidad técnica, confiabilidad y compromiso con nuestros clientes, desarrollando proyectos innovadores que generen valor, optimicen recursos y contribuyan al crecimiento sostenible de las operaciones que atendemos.',
   differentiators: [
     {
       id: 'reusable',
@@ -52,15 +52,15 @@ export const company: Company = {
   ],
   aboutMetrics: [],
   aboutCertifications: [],
-  phone: '+52 55 1234 5678',
-  email: 'contacto@dev-webpages-rx23.com',
-  whatsapp: '+52 55 1234 5678',
+  phone: '+52 99 113 5873',
+  email: 'hanaya@epc-ste.com',
+  whatsapp: '+52 99 113 5873',
   address: 'Av. Reforma 123, Ciudad de México, México',
   businessHours: 'Lunes a Viernes · 09:00 - 18:00',
   googleMapsUrl: 'https://www.google.com/maps',
   socialLinks: {
-    linkedin: 'https://www.linkedin.com',
-    instagram: 'https://www.instagram.com',
-    facebook: 'https://www.facebook.com',
+    linkedin: 'https://www.linkedin.com/company/epc-ste',
+    instagram: 'https://www.instagram.com/epc_ste',
+    facebook: 'https://www.facebook.com/epc.ste',
   },
 };

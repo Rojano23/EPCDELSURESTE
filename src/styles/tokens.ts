@@ -30,13 +30,13 @@ export interface DesignTokens {
 
 export const designTokens: DesignTokens = {
   colors: {
-    primary: '#38bdf8',
-    secondary: '#0f172a',
-    accent: '#f59e0b',
-    background: '#020617',
-    text: '#f8fafc',
-    muted: '#94a3b8',
-    border: '#1e293b',
+    primary: '#155A7A',
+    secondary: '#0B2638',
+    accent: '#F28C28',
+    background: '#F4F6F7',
+    text: '#17212B',
+    muted: '#64748B',
+    border: '#D8E0E5',
   },
   typography: {
     body: 'Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
