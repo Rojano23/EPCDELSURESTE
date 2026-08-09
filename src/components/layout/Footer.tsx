@@ -24,7 +24,7 @@ export function Footer() {
     marginBottom: designTokens.spacing.sm,
     fontFamily: theme.fontFamilyHeading,
     fontSize: '0.95rem',
-    color: theme.textColor,
+    color: theme.textOnDarkColor,
   };
 
   return (

@@ -24,12 +24,12 @@ export function ServiceCard({ service }: ServiceCardProps) {
     fontFamily: theme.fontFamilyHeading,
     fontWeight: 700,
     fontSize: 'clamp(1rem, 2.5vw, 1.125rem)',
-    color: theme.textColor,
+    color: theme.textOnDarkColor,
   };
 
   const descriptionStyle: CSSProperties = {
     margin: 0,
-    color: theme.textSecondaryColor,
+    color: theme.textOnDarkColor,
     fontSize: '0.95rem',
     lineHeight: 1.65,
   };
@@ -38,7 +38,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
     <BaseCard ariaLabel={service.title}>
       <div style={headerStyle}>
         <h3 style={titleStyle}>{service.title}</h3>
-        {service.featured && <Badge label="Destacado" tone="primary" />}
+        {service.featured && <Badge label="Destacado" tone="accent" />}
       </div>
       <p style={descriptionStyle}>{service.shortDescription}</p>
     </BaseCard>

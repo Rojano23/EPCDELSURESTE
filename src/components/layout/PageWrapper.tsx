@@ -11,7 +11,7 @@ export function PageWrapper({ children, style, ...rest }: PageWrapperProps) {
   const wrapperStyle: CSSProperties = {
     minHeight: '100dvh',
     backgroundColor: theme.backgroundColor,
-    color: theme.textOnDarkColor,
+    color: theme.textColor,
     fontFamily: designTokens.typography.body,
     ...style,
   };

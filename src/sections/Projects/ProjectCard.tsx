@@ -24,7 +24,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
     fontFamily: theme.fontFamilyHeading,
     fontWeight: 700,
     fontSize: 'clamp(1rem, 2.5vw, 1.125rem)',
-    color: theme.textColor,
+    color: theme.textOnDarkColor,
   };
 
   const sectorStyle: CSSProperties = {
@@ -49,7 +49,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       <span style={sectorStyle}>{project.sector}</span>
       <div style={headerStyle}>
         <h3 style={titleStyle}>{project.title}</h3>
-        {project.featured && <Badge label="Destacado" tone="neutral" />}
+        {project.featured && <Badge label="Destacado" tone="accent" />}
       </div>
       <p style={descriptionStyle}>{project.shortDescription}</p>
     </BaseCard>
