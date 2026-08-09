@@ -18,7 +18,7 @@ export function ProjectsSection() {
           as="h2"
           eyebrow="Nuestro portafolio"
           title="Proyectos"
-          subtitle="Experiencia real en implementación de soluciones digitales corporativas."
+          subtitle="Experiencia real en implementación de soluciones en la industria energética."
         />
         <ProjectsGrid projects={projects} />
       </div>

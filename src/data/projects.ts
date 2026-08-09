@@ -26,6 +26,6 @@ export const projects: Project[] = [
     shortDescription: 'Procura e instalación de sistema de telemedición para Pemex Refinación.',
     detailedDescription:
       'Procura e instalación de sistema de telemedición para Pemex Refinación en la Terminal Marítima Dos Bocas.',
-    featured: true,
+    featured: false,
   },
 ];

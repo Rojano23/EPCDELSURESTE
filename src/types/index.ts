@@ -77,14 +77,12 @@ export interface Service {
   detailedDescription: string;
   icon: string;
   featured: boolean;
+  image?: string;
+  imageAlt?: string;
   /** Reserved for future category filtering */
   category?: string;
   /** Reserved for future individual page routing */
   href?: string;
-  /** Reserved for future image support */
-  image?: string;
-  /** Reserved for future accessible image text */
-  imageAlt?: string;
 }
 
 export interface Industry {
