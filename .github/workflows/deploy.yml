@@ -1,4 +1,4 @@
-name: Deploy RX23 to GitHub Pages
+name: EPC DEL SURESTE Deploy to GitHub Pages
 
 on:
   push:

@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
 
-  base: '/DEV-WEBPAGES-RX23/',
+  base: '/EPC DEL SURESTE/',
 
   server: {
     host: '0.0.0.0',
