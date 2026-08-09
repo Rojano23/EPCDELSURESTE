@@ -32,7 +32,7 @@ export function Container({
     maxWidth: sizeMap[size],
     marginInline: 'auto',
     paddingInline: `clamp(${designTokens.spacing.md}, 4vw, ${designTokens.spacing.xl})`,
-    color: theme.textColor,
+    color: theme.textOnDarkColor,
     ...style,
   };
 

@@ -143,6 +143,7 @@ export interface Theme {
   backgroundColor: string;
   textColor: string;
   textSecondaryColor: string;
+  textOnDarkColor: string;
   borderColor: string;
   radius: string;
   shadow: string;

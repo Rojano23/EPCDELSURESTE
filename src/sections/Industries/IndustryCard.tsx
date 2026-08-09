@@ -24,7 +24,7 @@ export function IndustryCard({ industry }: IndustryCardProps) {
     fontFamily: theme.fontFamilyHeading,
     fontWeight: 700,
     fontSize: 'clamp(1rem, 2.5vw, 1.125rem)',
-    color: theme.textColor,
+    color: theme.textOnDarkColor,
   };
 
   const descriptionStyle: CSSProperties = {

@@ -5,6 +5,8 @@ export interface DesignTokens {
     accent: string;
     background: string;
     text: string;
+    textSecondary: string;
+    textOnDark: string;
     muted: string;
     border: string;
   };
@@ -32,10 +34,17 @@ export const designTokens: DesignTokens = {
   colors: {
     primary: '#155A7A',
     secondary: '#0B2638',
+
     accent: '#F28C28',
+
     background: '#F4F6F7',
+
     text: '#17212B',
-    muted: '#64748B',
+    textSecondary: '#64748B',
+
+    textOnDark: '#FFFFFF',
+    muted: '#D8E0E5',
+
     border: '#D8E0E5',
   },
   typography: {

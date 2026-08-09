@@ -33,7 +33,7 @@ export function BaseCard({
     border: `1px solid ${theme.borderColor}`,
     borderRadius: theme.radius,
     backgroundColor: theme.secondaryColor,
-    color: theme.textColor,
+    color: theme.textOnDarkColor,
     boxShadow: designTokens.shadow,
     padding: `clamp(${designTokens.spacing.md}, 2vw, ${designTokens.spacing.xl})`,
     width: '100%',

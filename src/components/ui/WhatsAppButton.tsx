@@ -29,7 +29,7 @@ export function WhatsAppButton() {
     borderRadius: '999px',
     border: `1px solid ${theme.primaryColor}`,
     backgroundColor: theme.primaryColor,
-    color: theme.secondaryColor,
+    color: theme.textOnDarkColor,
     boxShadow: theme.shadow,
     fontFamily: theme.fontFamily,
     fontSize: '0.875rem',
