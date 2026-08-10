@@ -18,7 +18,7 @@ export function NavigationLink({ label, isActive = false, style, ...rest }: Navi
     fontFamily: theme.fontFamily,
     fontWeight: 600,
     textDecoration: 'none',
-    color: isActive ? theme.secondaryColor : theme.textColor,
+    color: isActive ? theme.secondaryColor : theme.textOnDarkColor,
     backgroundColor: isActive ? theme.primaryColor : 'transparent',
     border: `1px solid ${isActive ? theme.primaryColor : 'transparent'}`,
     minHeight: '2.25rem',
@@ -31,4 +31,4 @@ export function NavigationLink({ label, isActive = false, style, ...rest }: Navi
       {label}
     </a>
   );
-}
+} 
