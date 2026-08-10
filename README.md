@@ -1,6 +1,6 @@
 # DEV-WEBPAGES-RX23
 
-Plantilla web corporativa reutilizable construida con React, Vite y TypeScript para crear sitios estaticos multi-cliente sin reescribir la logica principal.
+Web corporativa industrial construida con React, Vite y TypeScript para crear sitios estaticos multi-cliente sin reescribir la logica principal.
 
 ## 1. Descripcion del proyecto
 DEV-WEBPAGES-RX23 es un template orientado a acelerar la entrega de sitios corporativos modernos, responsivos y mantenibles. El enfoque principal es separar configuracion de negocio y presentacion para poder crear nuevos sitios cambiando datos y branding, no componentes base.
