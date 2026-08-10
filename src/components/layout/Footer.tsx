@@ -64,7 +64,7 @@ export function Footer() {
             >
               {enabledItems.map((item) => (
                 <li key={item.id}>
-                  <a className="focus-ring" href={item.href} style={{ color: theme.primaryColor, textDecoration: 'none' }}>
+                  <a className="focus-ring" href={item.href} style={{ color: theme.textOnDarkColor, textDecoration: 'none' }}>
                     {item.label}
                   </a>
                 </li>
@@ -74,9 +74,9 @@ export function Footer() {
 
           <section aria-label="Contacto en pie de página">
             <h3 style={sectionTitleStyle}>Contacto</h3>
-            <p style={{ margin: `0 0 ${designTokens.spacing.xs}`, color: theme.textSecondaryColor }}>{company.email}</p>
-            <p style={{ margin: `0 0 ${designTokens.spacing.xs}`, color: theme.textSecondaryColor }}>{company.phone}</p>
-            <p style={{ margin: 0, color: theme.textSecondaryColor }}>{company.address}</p>
+            <p style={{ margin: `0 0 ${designTokens.spacing.xs}`, color: theme.textOnDarkColor }}>{company.email}</p>
+            <p style={{ margin: `0 0 ${designTokens.spacing.xs}`, color: theme.textOnDarkColor }}>{company.phone}</p>
+            <p style={{ margin: 0, color: theme.textOnDarkColor }}>{company.address}</p>
           </section>
 
           {features.socialLinks && socialEntries.length > 0 ? (

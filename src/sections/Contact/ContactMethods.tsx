@@ -29,7 +29,7 @@ export function ContactMethods({ company, showSocialLinks }: ContactMethodsProps
   return (
     <section aria-label="Métodos de contacto" style={{ display: 'grid', gap: designTokens.spacing.md }}>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: designTokens.spacing.sm }}>
-        <Badge label={`WhatsApp: ${company.whatsapp}`} tone="accent" />
+        <Badge label={`WhatsApp: ${company.whatsapp}`} tone="border" />
         <Badge label={`Email: ${company.email}`} tone="accent" />
       </div>
 

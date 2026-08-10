@@ -3,7 +3,7 @@ import type { CSSProperties, HTMLAttributes } from 'react';
 import { theme } from '../../data/theme';
 import { designTokens } from '../../styles/tokens';
 
-type BadgeTone = 'primary' | 'accent' | 'neutral';
+type BadgeTone = 'primary' | 'accent' | 'neutral' | 'border';
 
 export interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
   label: string;
@@ -27,7 +27,13 @@ function getToneStyle(tone: BadgeTone): CSSProperties {
       border: `1px solid ${theme.accentColor}`,
     };
   }
-
+  if (tone === 'border') {
+    return {
+      color: theme.borderColor,
+      backgroundColor: theme.borderColor,
+      border: `1px solid ${theme.primaryColor}`,
+    };
+  }
   return {
     color: theme.textColor,
     backgroundColor: theme.secondaryColor,
