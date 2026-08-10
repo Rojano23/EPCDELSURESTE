@@ -29,7 +29,7 @@ function getToneStyle(tone: BadgeTone): CSSProperties {
   }
   if (tone === 'border') {
     return {
-      color: theme.borderColor,
+      color: theme.textColor,
       backgroundColor: theme.borderColor,
       border: `1px solid ${theme.primaryColor}`,
     };
