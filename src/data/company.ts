@@ -6,8 +6,8 @@ export const company: Company = {
   logo: {
     src: new URL('../assets/cliente/Logo.svg', import.meta.url).href,
     alt: 'Logotipo de EPC DEL SURESTE, SAPI DE CV',
-    width: 94,
-    height: 104,
+    width: 140,
+    height: 60,
   },
   tagline: 'Ingeniería. Procura. Ejecución. Soluciones integrales para la industria energética.',
   description:
@@ -63,7 +63,7 @@ export const company: Company = {
   email: 'contacto@epc-ste.com',
   whatsapp: '+52 99 113 5873',
   address: 'Villahermosa, Tabasco, México',
-  businessHours: 'L-V · 08:00 - 18:00 - Sab · 09:00 - 13:00',
+  businessHours: 'Lun-Vier. · 08:00 - 18:00 - Sab · 09:00 - 13:00',
   googleMapsUrl: 'https://www.google.com/maps',
   socialLinks: {
     linkedin: 'https://www.linkedin.com/company/epc-ste',
