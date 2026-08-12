@@ -8,7 +8,7 @@ export const features: FeatureFlags = {
   differentiators: false,
   gallery: true,
   whatsapp: true,
-  socialLinks: true,
+  socialLinks: false,
   contactForm: false,
   maps: false,
 };

@@ -6,8 +6,8 @@ export const company: Company = {
   logo: {
     src: new URL('../assets/cliente/Logo.svg', import.meta.url).href,
     alt: 'Logotipo de EPC DEL SURESTE, SAPI DE CV',
-    width: 54,
-    height: 64,
+    width: 94,
+    height: 104,
   },
   tagline: 'Ingeniería. Procura. Ejecución. Soluciones integrales para la industria energética.',
   description:
