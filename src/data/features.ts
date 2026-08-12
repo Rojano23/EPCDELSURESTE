@@ -6,7 +6,7 @@ export const features: FeatureFlags = {
   industries: true,
   projects: true,
   differentiators: false,
-  gallery: false,
+  gallery: true,
   whatsapp: true,
   socialLinks: true,
   contactForm: false,

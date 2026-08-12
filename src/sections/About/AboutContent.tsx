@@ -47,7 +47,7 @@ export function AboutContent({ company, contentAlignment }: AboutContentProps) {
           <h3
             style={{
               margin: `0 0 ${designTokens.spacing.sm}`,
-              color: theme.primaryColor,
+              color: theme.accentColor,
               fontSize: '1rem',
               textTransform: 'uppercase',
               letterSpacing: '0.1em',
