@@ -1,11 +1,12 @@
 import { Section } from '../../components/layout';
 import { SectionTitle } from '../../components/ui';
-import { clientConfig } from '../../data';
+import { clientConfig, getContentAlignmentForSection } from '../../data';
 import { designTokens } from '../../styles/tokens';
 import { ProjectsGrid } from './ProjectsGrid';
 
 export function ProjectsSection() {
-  const { featureFlags, projects } = clientConfig;
+  const { featureFlags, projects, contentAlignment } = clientConfig;
+  const sectionContentAlignment = getContentAlignmentForSection('projects', contentAlignment);
 
   if (!featureFlags.projects) {
     return null;
@@ -20,7 +21,7 @@ export function ProjectsSection() {
           title="Proyectos"
           subtitle="Experiencia real en implementación de soluciones en la industria energética."
         />
-        <ProjectsGrid projects={projects} />
+        <ProjectsGrid projects={projects} contentAlignment={sectionContentAlignment} />
       </div>
     </Section>
   );

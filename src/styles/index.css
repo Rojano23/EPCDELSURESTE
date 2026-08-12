@@ -71,6 +71,74 @@ body {
   display: grid;
 }
 
+.gallery-marquee {
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+
+.gallery-marquee-track {
+  display: flex;
+  width: max-content;
+  min-width: 100%;
+  align-items: center;
+  gap: var(--spacing-lg);
+  will-change: transform;
+  animation: gallery-marquee 28s linear infinite;
+}
+
+.gallery-marquee:hover .gallery-marquee-track {
+  animation-play-state: paused;
+}
+
+.gallery-marquee-item {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-brand-item {
+  min-width: 10rem;
+  max-width: 12rem;
+  height: 5rem;
+  padding: var(--spacing-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: rgba(15, 23, 42, 0.8);
+}
+
+.gallery-product-item {
+  width: min(16rem, 62vw);
+  height: 12rem;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: rgba(15, 23, 42, 0.8);
+}
+
+.gallery-product-item img,
+.gallery-brand-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-brand-item img {
+  object-fit: contain;
+}
+
+@keyframes gallery-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 @media (min-width: 768px) {
   .nav-desktop-list {
     display: inline-flex !important;

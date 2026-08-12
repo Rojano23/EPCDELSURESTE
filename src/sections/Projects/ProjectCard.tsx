@@ -1,6 +1,6 @@
 import type { CSSProperties } from 'react';
 
-import type { Project } from '../../types';
+import type { ContentTextAlignment, Project } from '../../types';
 import { theme } from '../../data/theme';
 import { designTokens } from '../../styles/tokens';
 import { BaseCard } from '../../components/cards';
@@ -8,9 +8,10 @@ import { Badge } from '../../components/ui';
 
 export interface ProjectCardProps {
   project: Project;
+  contentAlignment: ContentTextAlignment;
 }
 
-export function ProjectCard({ project }: ProjectCardProps) {
+export function ProjectCard({ project, contentAlignment }: ProjectCardProps) {
   const headerStyle: CSSProperties = {
     display: 'flex',
     alignItems: 'flex-start',
@@ -42,6 +43,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
     color: theme.textOnDarkColor,
     fontSize: '0.95rem',
     lineHeight: 1.65,
+    textAlign: contentAlignment,
   };
 
   return (

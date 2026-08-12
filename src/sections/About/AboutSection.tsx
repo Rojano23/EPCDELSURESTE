@@ -1,10 +1,11 @@
 import { Section } from '../../components/layout';
-import { clientConfig } from '../../data';
+import { clientConfig, getContentAlignmentForSection } from '../../data';
 import { designTokens } from '../../styles/tokens';
 import { AboutContent } from './AboutContent';
 
 export function AboutSection() {
-  const { featureFlags, company } = clientConfig;
+  const { featureFlags, company, contentAlignment } = clientConfig;
+  const sectionContentAlignment = getContentAlignmentForSection('about', contentAlignment);
 
   if (!featureFlags.about) {
     return null;
@@ -13,7 +14,7 @@ export function AboutSection() {
   return (
     <Section ariaLabel="Nosotros" id="nosotros" spacing="lg">
       <div style={{ display: 'grid', gap: designTokens.spacing.xl }}>
-        <AboutContent company={company} />
+        <AboutContent company={company} contentAlignment={sectionContentAlignment} />
       </div>
     </Section>
   );

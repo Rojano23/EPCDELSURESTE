@@ -72,6 +72,10 @@ La personalizacion para un nuevo cliente se realiza en:
 - src/data/theme.ts
 - src/data/seo.ts
 - src/data/features.ts
+- src/data/contentAlignment.ts
+
+Campo destacado en src/data/company.ts:
+- logo: permite definir src, alt y dimensiones opcionales para el logotipo en Header/Navbar.
 
 No se debe modificar la logica principal de src/components ni src/sections para adaptar un cliente.
 

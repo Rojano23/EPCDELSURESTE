@@ -12,6 +12,8 @@ import { NavigationLink } from './NavigationLink';
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeHref, setActiveHref] = useState('#inicio');
+  const logo = clientConfig.company.logo;
+  const hasLogo = Boolean(logo?.src);
 
   const enabledItems = useMemo(
     () => getEnabledNavigationItems(navigationItems, clientConfig.featureFlags),
@@ -69,15 +71,30 @@ export function Navbar() {
             }}
             onClick={() => handleLinkClick('#inicio')}
           >
-            <span
-              aria-hidden="true"
-              style={{
-                width: '0.75rem',
-                height: '0.75rem',
-                borderRadius: '999px',
-                backgroundColor: theme.accentColor,
-              }}
-            />
+            {hasLogo ? (
+              <img
+                src={logo?.src}
+                alt={logo?.alt ?? `Logotipo de ${clientConfig.company.companyName}`}
+                width={logo?.width}
+                height={logo?.height}
+                style={{
+                  display: 'block',
+                  width: logo?.width ? `${logo.width}px` : '2rem',
+                  height: logo?.height ? `${logo.height}px` : '2rem',
+                  objectFit: 'contain',
+                }}
+              />
+            ) : (
+              <span
+                aria-hidden="true"
+                style={{
+                  width: '0.75rem',
+                  height: '0.75rem',
+                  borderRadius: '999px',
+                  backgroundColor: theme.accentColor,
+                }}
+              />
+            )}
             <span>{clientConfig.company.companyName}</span>
           </a>
 

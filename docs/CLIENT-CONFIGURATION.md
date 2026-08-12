@@ -8,6 +8,7 @@ Configurar un nuevo cliente sin modificar la logica principal de la plantilla.
 ### src/data/company.ts
 Define identidad y contenido corporativo principal:
 - nombre
+- logo (src, alt, width opcional, height opcional)
 - tagline
 - hero
 - about
@@ -42,12 +43,25 @@ Metadatos SEO basicos:
 ### src/data/features.ts
 Controla visibilidad de secciones y bloques via feature flags.
 
+### src/data/contentAlignment.ts
+Controla alineacion de textos de contenido por seccion.
+
+Valores permitidos:
+- left
+- center
+- justify
+
+Regla:
+- No usar feature flags para alineacion.
+- Aplica solo a textos de contenido (parrafos y descripciones), no a titulos.
+
 ## Que SI puede modificar un cliente nuevo
 - Todo el contenido de src/data/company.ts.
 - Catalogos de src/data/services.ts, src/data/industries.ts y src/data/projects.ts.
 - Valores de branding en src/data/theme.ts.
 - Metadatos SEO en src/data/seo.ts.
 - Flags en src/data/features.ts.
+- Alineacion de contenido en src/data/contentAlignment.ts.
 - Assets en public/ y src/assets/.
 
 ## Que NO debe modificar

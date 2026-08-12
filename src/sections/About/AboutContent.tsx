@@ -1,4 +1,4 @@
-import type { Company } from '../../types';
+import type { Company, ContentTextAlignment } from '../../types';
 
 import { theme } from '../../data/theme';
 import { designTokens } from '../../styles/tokens';
@@ -6,9 +6,10 @@ import { SectionTitle } from '../../components/ui';
 
 export interface AboutContentProps {
   company: Company;
+  contentAlignment: ContentTextAlignment;
 }
 
-export function AboutContent({ company }: AboutContentProps) {
+export function AboutContent({ company, contentAlignment }: AboutContentProps) {
   return (
     <div style={{ display: 'grid', gap: designTokens.spacing.lg }}>
       <SectionTitle
@@ -24,6 +25,7 @@ export function AboutContent({ company }: AboutContentProps) {
           color: theme.textSecondaryColor,
           fontSize: 'clamp(1rem, 2.5vw, 1.125rem)',
           lineHeight: 1.7,
+          textAlign: contentAlignment,
         }}
       >
         {company.aboutDescription}
@@ -53,7 +55,7 @@ export function AboutContent({ company }: AboutContentProps) {
           >
             Misión
           </h3>
-          <p style={{ margin: 0, color: theme.textOnDarkColor, lineHeight: 1.6 }}>
+          <p style={{ margin: 0, color: theme.textOnDarkColor, lineHeight: 1.6, textAlign: contentAlignment }}>
             {company.mission}
           </p>
         </article>
@@ -78,7 +80,7 @@ export function AboutContent({ company }: AboutContentProps) {
           >
             Visión
           </h3>
-          <p style={{ margin: 0, color: theme.textOnDarkColor, lineHeight: 1.6 }}>
+          <p style={{ margin: 0, color: theme.textOnDarkColor, lineHeight: 1.6, textAlign: contentAlignment }}>
             {company.vision}
           </p>
         </article>

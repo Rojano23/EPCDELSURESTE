@@ -1,11 +1,12 @@
 import { Section } from '../../components/layout';
 import { SectionTitle } from '../../components/ui';
-import { clientConfig } from '../../data';
+import { clientConfig, getContentAlignmentForSection } from '../../data';
 import { designTokens } from '../../styles/tokens';
 import { ServicesGrid } from './ServicesGrid';
 
 export function ServicesSection() {
-  const { featureFlags, services } = clientConfig;
+  const { featureFlags, services, contentAlignment } = clientConfig;
+  const sectionContentAlignment = getContentAlignmentForSection('services', contentAlignment);
 
   if (!featureFlags.services) {
     return null;
@@ -20,7 +21,7 @@ export function ServicesSection() {
           title="Nuestros servicios"
           subtitle="Soluciones configurables para cada etapa de tu proyecto industrial."
         />
-        <ServicesGrid services={services} />
+        <ServicesGrid services={services} contentAlignment={sectionContentAlignment} />
       </div>
     </Section>
   );

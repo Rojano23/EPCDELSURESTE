@@ -1,6 +1,6 @@
 import type { CSSProperties } from 'react';
 
-import type { Service } from '../../types';
+import type { ContentTextAlignment, Service } from '../../types';
 import { theme } from '../../data/theme';
 import { designTokens } from '../../styles/tokens';
 import { BaseCard } from '../../components/cards';
@@ -8,11 +8,12 @@ import { Badge } from '../../components/ui';
 
 export interface ServiceCardProps {
   service: Service;
+  contentAlignment: ContentTextAlignment;
 }
 
-export function ServiceCard({ service }: ServiceCardProps) {
+export function ServiceCard({ service, contentAlignment }: ServiceCardProps) {
   const cardStyle: CSSProperties = {
-    minHeight: '30rem',
+    height: '100%',
     display: 'flex',
     flexDirection: 'column',
     gap: designTokens.spacing.md,
@@ -45,6 +46,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
     color: theme.textOnDarkColor,
     fontSize: '0.95rem',
     lineHeight: 1.65,
+    textAlign: contentAlignment,
   };
 
   const detailedDescriptionStyle: CSSProperties = {
@@ -52,6 +54,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
     color: theme.textOnDarkColor,
     fontSize: '0.9rem',
     lineHeight: 1.7,
+    textAlign: contentAlignment,
   };
 
   return (

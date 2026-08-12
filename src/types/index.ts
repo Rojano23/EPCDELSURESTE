@@ -24,6 +24,13 @@ export interface HeroStatistic {
   value: string;
 }
 
+export interface CompanyLogo {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+}
+
 export interface Differentiator {
   id: string;
   title: string;
@@ -38,6 +45,7 @@ export interface Differentiator {
 
 export interface Company {
   companyName: string;
+  logo?: CompanyLogo;
   tagline: string;
   description: string;
   heroTitle: string;
@@ -149,12 +157,38 @@ export interface Theme {
   fontFamilyHeading: string;
 }
 
+export type ContentTextAlignment = 'left' | 'center' | 'justify';
+export type ContentAlignmentSectionKey = 'about' | 'services' | 'projects';
+
+export interface ContentAlignmentConfig {
+  default: ContentTextAlignment;
+  sections?: Partial<Record<ContentAlignmentSectionKey, ContentTextAlignment>>;
+}
+
+export interface BrandItem {
+  name: string;
+  logo: string;
+}
+
+export interface ProductItem {
+  title: string;
+  image: string;
+}
+
+export interface GalleryContent {
+  brandsTitle: string;
+  productsTitle: string;
+  brands: BrandItem[];
+  products: ProductItem[];
+}
+
 export interface FeatureFlags {
   about: boolean;
   services: boolean;
   industries: boolean;
   projects: boolean;
   differentiators: boolean;
+  gallery: boolean;
   whatsapp: boolean;
   socialLinks: boolean;
   contactForm: boolean;
@@ -168,9 +202,11 @@ export interface ClientConfig {
   services: Service[];
   industries: Industry[];
   projects: Project[];
+  gallery: GalleryContent;
   contact: ContactDetails;
   socialLinks: SocialLinks;
   featureFlags: FeatureFlags;
+  contentAlignment: ContentAlignmentConfig;
 }
 
 export type NavigationFeatureKey = keyof Pick<

@@ -1,7 +1,9 @@
 import type { ClientConfig } from '../types';
 
 import { company } from './company';
+import { contentAlignment } from './contentAlignment';
 import { features } from './features';
+import { gallery } from './gallery';
 import { industries } from './industries';
 import { projects } from './projects';
 import { seo } from './seo';
@@ -15,6 +17,7 @@ export const clientConfig: ClientConfig = {
   services,
   industries,
   projects,
+  gallery,
   contact: {
     phone: company.phone,
     email: company.email,
@@ -25,6 +28,7 @@ export const clientConfig: ClientConfig = {
   },
   socialLinks: company.socialLinks,
   featureFlags: features,
+  contentAlignment,
 };
 
 export function createClientConfig(overrides: Partial<ClientConfig> = {}): ClientConfig {
@@ -54,6 +58,20 @@ export function createClientConfig(overrides: Partial<ClientConfig> = {}): Clien
     featureFlags: {
       ...clientConfig.featureFlags,
       ...(overrides.featureFlags ?? {}),
+    },
+    gallery: {
+      ...clientConfig.gallery,
+      ...(overrides.gallery ?? {}),
+      brands: overrides.gallery?.brands ?? clientConfig.gallery.brands,
+      products: overrides.gallery?.products ?? clientConfig.gallery.products,
+    },
+    contentAlignment: {
+      ...clientConfig.contentAlignment,
+      ...(overrides.contentAlignment ?? {}),
+      sections: {
+        ...(clientConfig.contentAlignment.sections ?? {}),
+        ...(overrides.contentAlignment?.sections ?? {}),
+      },
     },
   };
 }

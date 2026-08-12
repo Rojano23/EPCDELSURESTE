@@ -60,7 +60,7 @@ src/
 ```
 
 ## Flujo de datos
-1. Los datos se definen en src/data (company, services, industries, projects, theme, seo, features).
+1. Los datos se definen en src/data (company, services, industries, projects, theme, seo, features, contentAlignment).
 2. src/data/clientConfig.ts consolida la configuracion en un objeto unico.
 3. Las secciones consumen clientConfig y renderizan segun feature flags.
 4. Los componentes visuales consumen theme/tokens y props tipadas.
@@ -90,6 +90,9 @@ Flags actuales:
 
 Objetivo:
 - Activar/desactivar bloques sin tocar logica principal.
+
+Nota:
+- Feature flags no deben usarse para configuracion de presentacion (como alineacion de texto).
 
 ## Design System
 El diseno se apoya en:

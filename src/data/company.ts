@@ -3,6 +3,12 @@ import type { Company } from '../types';
 
 export const company: Company = {
   companyName: 'EPC DEL SURESTE, SAPI DE CV',
+  logo: {
+    src: new URL('../assets/cliente/Logo.svg', import.meta.url).href,
+    alt: 'Logotipo de EPC DEL SURESTE, SAPI DE CV',
+    width: 44,
+    height: 44,
+  },
   tagline: 'Ingeniería. Procura. Ejecución. Soluciones integrales para la industria energética.',
   description:
     'EPC DEL SURESTE, SAPI DE CV es una empresa dedicada a brindar soluciones integrales para la industria energética, con enfoque en ingeniería, procura y ejecución.',
@@ -54,10 +60,10 @@ export const company: Company = {
   aboutMetrics: [],
   aboutCertifications: [],
   phone: '+52 99 113 5873',
-  email: 'hanaya@epc-ste.com',
+  email: 'contacto@epc-ste.com',
   whatsapp: '+52 99 113 5873',
-  address: 'Av. Reforma 123, Ciudad de México, México',
-  businessHours: 'Lunes a Viernes · 09:00 - 18:00',
+  address: 'Villahermosa, Tabasco, México',
+  businessHours: 'L-V · 08:00 - 18:00 - Sab · 09:00 - 13:00',
   googleMapsUrl: 'https://www.google.com/maps',
   socialLinks: {
     linkedin: 'https://www.linkedin.com/company/epc-ste',
