@@ -211,7 +211,7 @@ export interface ClientConfig {
 
 export type NavigationFeatureKey = keyof Pick<
   FeatureFlags,
-  'about' | 'services' | 'industries' | 'projects' | 'differentiators'
+  'about' | 'services' | 'industries' | 'projects' | 'differentiators' | 'gallery'
 >;
 
 export interface NavigationItem {
