@@ -33,7 +33,7 @@ export function ContactDetails({ company }: ContactDetailsProps) {
         ))}
       </div>
       <p style={{ margin: 0, color: theme.textSecondaryColor, lineHeight: 1.6 }}>
-        Contáctanos para una cotización a nuestro correo de ventas.
+        Contáctanos para una cotización a nuestro correo de contacto.
       </p>
     </section>
   );
