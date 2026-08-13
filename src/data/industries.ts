@@ -15,7 +15,7 @@ export const industries: Industry[] = [
     shortDescription: 'Proyectos técnicos y servicios de soporte especializado.',
     detailedDescription:
       'Desarrollo de proyectos de instrumentación, control, telecomunicaciones y soporte técnico para sectores productivos.',
-    featured: true,
+    featured: false,
   },
 
   {
@@ -33,6 +33,6 @@ export const industries: Industry[] = [
     shortDescription: 'Sistemas para la industria de hidrocarburos y afines.',
     detailedDescription:
       'Implementación de soluciones tecnológicas para upstream, midstream y downstream en la industria de petróleo y gas.',
-    featured: true,
+    featured: false,
   },
 ];
