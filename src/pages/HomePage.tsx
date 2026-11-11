@@ -9,7 +9,6 @@ import { BrandsGallerySection } from '../sections/BrandsGallery';
 import { DifferentiatorsSection } from '../sections/Differentiators';
 import { ContactSection } from '../sections/Contact';
 import { WhatsAppButton } from '../components/ui';
-import { clientConfig } from '../data';
 
 // Composición mínima de la página de inicio para preparar la evolución hacia secciones del MVP.
 export function HomePage() {
@@ -27,7 +26,7 @@ export function HomePage() {
 
       <ProjectsSection />
 
-      {clientConfig.featureFlags.gallery && <BrandsGallerySection />}
+      <BrandsGallerySection />
 
       <DifferentiatorsSection />
 

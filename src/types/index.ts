@@ -166,20 +166,62 @@ export interface ContentAlignmentConfig {
 }
 
 export interface BrandItem {
+  id: string;
   name: string;
-  logo: string;
+  shortDescription: string;
+  published: boolean;
+  displayOrder: number;
+  logo?: string;
+  logoAlt?: string;
+  families: InstrumentFamily[];
 }
 
+export interface InstrumentFamily {
+  id: string;
+  brandId: string;
+  name: string;
+  shortDescription: string;
+  published: boolean;
+  displayOrder: number;
+}
+
+export type ProductVerificationStatus = 'verified' | 'pending';
+
 export interface ProductItem {
-  title: string;
-  image: string;
+  /** Legacy field kept for compatibility with previous marquee components */
+  title?: string;
+  /** Legacy field kept for compatibility with previous marquee components */
+  image?: string;
+  id: string;
+  brandId: string;
+  /** Legacy field kept for compatibility with previous data shape */
+  familyId?: string;
+  familyIds: string[];
+  model: string;
+  commercialName: string;
+  shortDescription: string;
+  applicationSummary?: string;
+  familyLabel?: string;
+  measuredVariable?: string;
+  communicationTechnologies?: string[];
+  mainSpecifications?: string[];
+  officialImage?: string;
+  officialImageAlt?: string;
+  officialPageUrl: string;
+  sourceUrls: string[];
+  technicalSheetUrl?: string;
+  technicalSheetLabel?: string;
+  verificationStatus: ProductVerificationStatus;
+  published: boolean;
 }
 
 export interface GalleryContent {
+  sectionTitle: string;
+  sectionIntro: string;
   brandsTitle: string;
-  productsTitle: string;
+  familiesTitle: string;
   brands: BrandItem[];
-  products: ProductItem[];
+  products?: ProductItem[];
 }
 
 export interface FeatureFlags {

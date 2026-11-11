@@ -32,7 +32,7 @@ export const navigationItems: NavigationItem[] = [
   },
   {
     id: 'gallery',
-    label: 'Galeria',
+    label: 'Instrumentación',
     href: '#marcas-galeria',
     featureKey: 'gallery',
   },
