@@ -107,7 +107,13 @@ export function BrandsGallerySection() {
                   ? 'brand-logo--current'
                   : brand.id === 'winters-instruments'
                     ? 'brand-logo--winters'
-                    : '';
+                    : brand.id === 'r-stahl'
+                      ? 'brand-logo--stahl'
+                      : brand.id === 'bermad'
+                        ? 'brand-logo--bermad'
+                        : brand.id === 'draeger'
+                          ? 'brand-logo--draeger'
+                          : '';
 
               return (
                 <button

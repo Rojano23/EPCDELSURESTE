@@ -1,4 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DEV-WEBPAGES-RX23 favicon">
-  <rect width="64" height="64" rx="16" fill="#0f172a" />
-  <path d="M20 18h24l-8 14 8 14H20l8-14-8-14z" fill="#38bdf8" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="EPC del Sureste favicon">
+  <defs>
+    <linearGradient id="epc-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12375c" />
+      <stop offset="100%" stop-color="#0b1f30" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#epc-bg)" />
+  <path d="M18 16h28v8H18zm0 12h24v8H18zm0 12h28v8H18z" fill="#edf6ff" />
+  <path d="M41 16h7v32h-7z" fill="#5cc8ff" />
+  <path d="M16 16h7v32h-7z" fill="#dfeeff" opacity="0.2" />
 </svg>

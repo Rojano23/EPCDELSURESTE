@@ -47,9 +47,22 @@ export function ProductDetailModal({ product, isOpen, whatsapp, onClose }: Produ
     return null;
   }
 
-  const shouldShowTechnicalSheet = Boolean(product.technicalSheetUrl) && product.brandId !== 'winters-instruments';
+  const shouldShowTechnicalSheet = Boolean(product.technicalSheetUrl) && product.verificationStatus === 'verified';
 
-  const whatsappMessage = `Hola, me interesa recibir información sobre el instrumento ${product.model} de ${product.brandId === 'current-instruments' ? 'Current Instruments' : 'Winters Instruments'}.`;
+  const brandName =
+    product.brandId === 'current-instruments'
+      ? 'Current Instruments'
+      : product.brandId === 'winters-instruments'
+        ? 'Winters Instruments'
+        : product.brandId === 'r-stahl'
+          ? 'R. STAHL'
+          : product.brandId === 'bermad'
+            ? 'BERMAD'
+            : product.brandId === 'draeger'
+              ? 'Dräger'
+              : 'este fabricante';
+
+  const whatsappMessage = `Hola, me interesa recibir información sobre el instrumento ${product.model} de ${brandName}.`;
 
   return (
     <div className="instrumentation-modal-backdrop" role="presentation" onClick={onClose}>

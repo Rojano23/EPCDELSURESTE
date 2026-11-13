@@ -60,6 +60,61 @@ const wintersPtgImage = new URL(
     '../assets/client/instrumentation/winters/gauges/winters-ptg-test-gauge.jpg',
     import.meta.url,
 ).href;
+const rStahlOrcaHmiImage = new URL(
+    '../assets/client/instrumentation/stahl/orca-os-e59a.png',
+    import.meta.url,
+).href;
+const rStahlExsysCoolImage = new URL(
+    '../assets/client/instrumentation/stahl/exsys-cool-serie-8701.jpg',
+    import.meta.url,
+).href;
+const rStahlExluxImage = new URL(
+    '../assets/client/instrumentation/stahl/exlux-serie-6002-4.jpg',
+    import.meta.url,
+).href;
+const rStahlExpressureImage = new URL(
+    '../assets/client/instrumentation/stahl/expressuregab.jpeg',
+    import.meta.url,
+).href;
+const bermadFp400y2dImage = new URL(
+    '../assets/client/instrumentation/bermad/bermad-fp-400y-2d.png',
+    import.meta.url,
+).href;
+const bermadFp400y2dcImage = new URL(
+    '../assets/client/instrumentation/bermad/bermad-fp-400y-2dc.jpeg',
+    import.meta.url,
+).href;
+const bermadFp400y4dcImage = new URL(
+    '../assets/client/instrumentation/bermad/bermad-fp-400y-4dc.jpeg',
+    import.meta.url,
+).href;
+const draegerPolytron8100EcImage = new URL(
+    '../assets/client/instrumentation/draeger/polytron-8100-ec.avif',
+    import.meta.url,
+).href;
+const draegerXam8000Image = new URL(
+    '../assets/client/instrumentation/draeger/x-am-8000.avif',
+    import.meta.url,
+).href;
+const draegerSaverCfImage = new URL(
+    '../assets/client/instrumentation/draeger/saver-cf.avif',
+    import.meta.url,
+).href;
+
+const rStahlBrandLogo = new URL(
+    '../assets/client/instrumentation/brands/stahl.png',
+    import.meta.url,
+).href;
+
+const bermadBrandLogo = new URL(
+    '../assets/client/instrumentation/brands/bermad.png',
+    import.meta.url,
+).href;
+
+const draegerBrandLogo = new URL(
+    '../assets/client/instrumentation/brands/Dräger_Logo.svg.webp',
+    import.meta.url,
+).href;
 
 export const gallery: GalleryContent = {
     sectionTitle: 'Instrumentación Industrial',
@@ -134,6 +189,114 @@ export const gallery: GalleryContent = {
                         'Línea de manómetros industriales para lectura y verificación de presión en procesos críticos.',
                     published: true,
                     displayOrder: 1,
+                },
+            ],
+        },
+        {
+            id: 'r-stahl',
+            name: 'R. STAHL',
+            shortDescription:
+                'Soluciones de seguridad eléctrica y automatización para zonas clasificadas y procesos críticos.',
+            published: true,
+            displayOrder: 3,
+            logo: rStahlBrandLogo,
+            logoAlt: 'Logotipo de R. STAHL',
+            families: [
+                {
+                    id: 'r-stahl-hmi',
+                    brandId: 'r-stahl',
+                    name: 'HMI',
+                    shortDescription:
+                        'Interfaces hombre-máquina para supervisión y control en entornos industriales exigentes.',
+                    published: true,
+                    displayOrder: 1,
+                },
+                {
+                    id: 'r-stahl-hvac',
+                    brandId: 'r-stahl',
+                    name: 'HVAC',
+                    shortDescription:
+                        'Equipos de control y automatización para sistemas de climatización y acondicionamiento industrial.',
+                    published: true,
+                    displayOrder: 2,
+                },
+                {
+                    id: 'r-stahl-luminarias',
+                    brandId: 'r-stahl',
+                    name: 'Luminarias',
+                    shortDescription:
+                        'Luminarias para áreas peligrosas y espacios con exigencias de seguridad y visibilidad.',
+                    published: true,
+                    displayOrder: 3,
+                },
+                {
+                    id: 'r-stahl-gabinetes',
+                    brandId: 'r-stahl',
+                    name: 'Gabinetes',
+                    shortDescription:
+                        'Gabinetes y soluciones de alojamiento para equipos críticos en instalaciones industriales.',
+                    published: true,
+                    displayOrder: 4,
+                },
+            ],
+        },
+        {
+            id: 'bermad',
+            name: 'BERMAD',
+            shortDescription:
+                'Control y protección de flujo para sistemas de agua contra incendios y procesos de presión.',
+            published: true,
+            displayOrder: 4,
+            logo: bermadBrandLogo,
+            logoAlt: 'Logotipo de BERMAD',
+            families: [
+                {
+                    id: 'bermad-fire-protection',
+                    brandId: 'bermad',
+                    name: 'Protección contra incendios',
+                    shortDescription:
+                        'Sistemas de válvulas y control para protección activa en instalaciones críticas y sensibles.',
+                    published: true,
+                    displayOrder: 1,
+                },
+                {
+                    id: 'bermad-pressure-control',
+                    brandId: 'bermad',
+                    name: 'Control de presión',
+                    shortDescription:
+                        'Soluciones de reducción y regulación de presión en sistemas hidráulicos y de agua industrial.',
+                    published: true,
+                    displayOrder: 2,
+                },
+            ],
+        },
+        {
+            id: 'draeger',
+            name: 'Dräger',
+            shortDescription:
+                'Tecnología para gases, seguridad ambiental y monitoreo de procesos en aplicaciones críticas.',
+            published: true,
+            displayOrder: 5,
+            logo: draegerBrandLogo,
+            logoAlt: 'Logotipo de Dräger',
+            families: [
+                {
+                    id: 'draeger-gas-detection',
+                    brandId: 'draeger',
+                    name: 'Detección de gases',
+                    shortDescription:
+                        'Sensores y sistemas de monitoreo para detección temprana y seguridad operativa.',
+                    published: true,
+                    displayOrder: 1,
+                },
+                {
+                    id: 'draeger-safety-systems',
+                    brandId: 'draeger',
+                    name: 'Sistemas de seguridad',
+                    shortDescription:
+                        'Soluciones de protección y vigilancia para aseguramiento continuo de condiciones críticas.',
+                    published: true,
+                    displayOrder: 2,
                 },
             ],
         },
@@ -454,6 +617,220 @@ export const gallery: GalleryContent = {
             technicalSheetUrl: 'https://winters.com/publications/datasheets/ptg.pdf',
             technicalSheetLabel: 'PTG Datasheet',
             verificationStatus: 'verified',
+            published: true,
+        },
+        {
+            id: 'r-stahl-orca-hmi',
+            brandId: 'r-stahl',
+            familyIds: ['r-stahl-hmi'],
+            model: 'ORCA',
+            commercialName: 'R. STAHL ORCA HMI',
+            shortDescription:
+                'Estación HMI ORCA para supervisión y control en entornos industriales con requisitos de seguridad.',
+            applicationSummary:
+                'Supervisión operativa y control para procesos críticos y zonas clasificadas.',
+            measuredVariable: 'Operación / supervisión',
+            communicationTechnologies: ['HMI', 'Visualización industrial'],
+            mainSpecifications: ['HMI de seguridad', 'Operación industrial', 'Zona clasificada'],
+            officialImage: rStahlOrcaHmiImage,
+            officialImageAlt: 'ORCA OS E59A de R. STAHL',
+            officialPageUrl:
+                'https://r-stahl.com/en/us/products/hmis-mobile-solutions-and-cctv-systems/hmis/orca-operator-stations-for-indoor-and-protected-outdoor/orca-operator-stations-for-indoor-and-protected-outdoor-61348/?hq=ORCA',
+            sourceUrls: [
+                'https://r-stahl.com/en/us/products/hmis-mobile-solutions-and-cctv-systems/hmis/orca-operator-stations-for-indoor-and-protected-outdoor/orca-operator-stations-for-indoor-and-protected-outdoor-61348/?hq=ORCA',
+            ],
+            verificationStatus: 'pending',
+            published: true,
+        },
+        {
+            id: 'r-stahl-exsys-cool-8701',
+            brandId: 'r-stahl',
+            familyIds: ['r-stahl-hvac'],
+            model: 'ExSys Cool 8701',
+            commercialName: 'R. STAHL ExSys Cool 8701',
+            shortDescription:
+                'Solución HVAC ExSys Cool serie 8701 para ambientes industriales con exigencias térmicas y de seguridad.',
+            applicationSummary:
+                'Control y climatización de instalaciones con requerimientos de protección en zonas clasificadas.',
+            measuredVariable: 'Temperatura / ventilación',
+            communicationTechnologies: ['HVAC', 'Control térmico'],
+            mainSpecifications: ['Serie 8701', 'Climatización industrial', 'Acondicionamiento seguro'],
+            officialImage: rStahlExsysCoolImage,
+            officialImageAlt: 'ExSys Cool 8701 de R. STAHL',
+            officialPageUrl:
+                'https://r-stahl.com/en/us/products/control-systems-and-distribution-boards/hvac-solutions/air-conditioner-exsys-cool-series-8701-65236/list-type/downloads/',
+            sourceUrls: [
+                'https://r-stahl.com/en/us/products/control-systems-and-distribution-boards/hvac-solutions/',
+                'https://r-stahl.com/en/us/products/control-systems-and-distribution-boards/hvac-solutions/air-conditioner-exsys-cool-series-8701-65236/list-type/downloads/',
+            ],
+            verificationStatus: 'pending',
+            published: true,
+        },
+        {
+            id: 'r-stahl-exlux-6002-4',
+            brandId: 'r-stahl',
+            familyIds: ['r-stahl-luminarias'],
+            model: 'EXLUX 6002/4',
+            commercialName: 'R. STAHL EXLUX 6002/4',
+            shortDescription:
+                'Luminaria lineal LED EXLUX serie 6002/4 para áreas peligrosas y espacios con exigencia de seguridad.',
+            applicationSummary:
+                'Iluminación industrial y de seguridad para procesos en zonas clasificadas.',
+            measuredVariable: 'Iluminación',
+            communicationTechnologies: ['Energía / iluminación'],
+            mainSpecifications: ['Serie 6002/4', 'Luminaria lineal LED', 'Zona peligrosa'],
+            officialImage: rStahlExluxImage,
+            officialImageAlt: 'EXLUX 6002/4 de R. STAHL',
+            officialPageUrl:
+                'https://r-stahl.com/es/es/productos/luminarias/luminarias-lineales/luminaria-lineal-led-exlux-serie-60024-55259/266724-55291/',
+            sourceUrls: [
+                'https://r-stahl.com/en/us/products/luminaires/',
+                'https://r-stahl.com/es/es/productos/luminarias/luminarias-lineales/luminaria-lineal-led-exlux-serie-60024-55259/266724-55291/',
+            ],
+            verificationStatus: 'pending',
+            published: true,
+        },
+        {
+            id: 'r-stahl-expressure-solution',
+            brandId: 'r-stahl',
+            familyIds: ['r-stahl-gabinetes'],
+            model: 'EXpressure',
+            commercialName: 'R. STAHL EXpressure',
+            shortDescription:
+                'Solución de gabinete EXpressure para alojamiento seguro de equipos y distribución crítica en entornos exigentes.',
+            applicationSummary:
+                'Protección mecánica y funcional para equipos en instalaciones de automatización y seguridad.',
+            measuredVariable: 'Alojamiento / protección',
+            communicationTechnologies: ['Enclosure', 'Protección mecánica'],
+            mainSpecifications: ['Gabinete de seguridad', 'Alojamiento industrial', 'Protección de equipos'],
+            officialImage: rStahlExpressureImage,
+            officialImageAlt: 'EXpressure de R. STAHL',
+            officialPageUrl:
+                'https://r-stahl.com/en/global/corporate/news/lighter-ex-d-enclosure-thanks-to-pressure-a-relief-feature/',
+            sourceUrls: [
+                'https://r-stahl.com/en/global/corporate/news/lighter-ex-d-enclosure-thanks-to-pressure-a-relief-feature/',
+            ],
+            verificationStatus: 'pending',
+            published: true,
+        },
+        {
+            id: 'bermad-fp-400y-2d',
+            brandId: 'bermad',
+            familyIds: ['bermad-fire-protection'],
+            model: 'FP-400Y-2D',
+            commercialName: 'BERMAD FP-400Y-2D',
+            shortDescription:
+                'Válvula de diluvio FP-400Y-2D de control eléctrico para sistemas de protección contra incendios.',
+            applicationSummary:
+                'Protección activa para instalaciones críticas con arranque eléctrico y control confiable de descarga.',
+            measuredVariable: 'Flujo / protección',
+            communicationTechnologies: ['Control eléctrico', 'Alarmas'],
+            mainSpecifications: ['Válvula de diluvio', 'Control eléctrico', 'Sistema de seguridad'],
+            officialImage: bermadFp400y2dImage,
+            officialImageAlt: 'BERMAD FP-400Y-2D',
+            officialPageUrl: 'https://www.bermad.com/product/fp-400y-2d/',
+            sourceUrls: ['https://www.bermad.com/product/fp-400y-2d/'],
+            verificationStatus: 'pending',
+            published: true,
+        },
+        {
+            id: 'bermad-fp-400y-2dc',
+            brandId: 'bermad',
+            familyIds: ['bermad-fire-protection', 'bermad-pressure-control'],
+            model: 'FP-400Y-2DC',
+            commercialName: 'BERMAD FP-400Y-2DC',
+            shortDescription:
+                'Válvula de diluvio eléctrica FP-400Y-2DC con control de presión para sistemas de protección y flujo.',
+            applicationSummary:
+                'Control de descarga con regulación de presión para instalaciones críticas y servicios de seguridad.',
+            measuredVariable: 'Presión / flujo',
+            communicationTechnologies: ['Control eléctrico', 'Regulación'],
+            mainSpecifications: ['Control de presión', 'Válvula de diluvio', 'Protección crítica'],
+            officialImage: bermadFp400y2dcImage,
+            officialImageAlt: 'BERMAD FP-400Y-2DC',
+            officialPageUrl: 'https://www.bermad.com/es/product/fp-400y-2dc/',
+            sourceUrls: ['https://www.bermad.com/es/product/fp-400y-2dc/'],
+            verificationStatus: 'pending',
+            published: true,
+        },
+        {
+            id: 'bermad-fp-400y-4dc',
+            brandId: 'bermad',
+            familyIds: ['bermad-pressure-control'],
+            model: 'FP-400Y-4DC',
+            commercialName: 'BERMAD FP-400Y-4DC',
+            shortDescription:
+                'Válvula de diluvio neumática FP-400Y-4DC con control de presión para sistemas de protección activa.',
+            applicationSummary:
+                'Solución para protección y regulación de flujo con operación neumática y control de presión.',
+            measuredVariable: 'Presión',
+            communicationTechnologies: ['Control neumático', 'Regulación'],
+            mainSpecifications: ['Control de presión', 'Neumática', 'Sistema de protección'],
+            officialImage: bermadFp400y4dcImage,
+            officialImageAlt: 'BERMAD FP-400Y-4DC',
+            officialPageUrl: 'https://www.bermad.com/es/product/fp-400y-4dc/',
+            sourceUrls: ['https://www.bermad.com/es/product/fp-400y-4dc/'],
+            verificationStatus: 'pending',
+            published: true,
+        },
+        {
+            id: 'draeger-polytron-8100-ec',
+            brandId: 'draeger',
+            familyIds: ['draeger-gas-detection'],
+            model: 'Polytron 8100',
+            commercialName: 'Dräger Polytron 8100 EC',
+            shortDescription:
+                'Detector de gas Polytron 8100 para monitorización continua en procesos y zonas industriales.',
+            applicationSummary:
+                'Detección de gases peligrosos con respuesta rápida y supervisión operativa en campo.',
+            measuredVariable: 'Gas / seguridad',
+            communicationTechnologies: ['4-20 mA', 'Alarmas'],
+            mainSpecifications: ['Detección continua', 'Área industrial', 'Alta sensibilidad'],
+            officialImage: draegerPolytron8100EcImage,
+            officialImageAlt: 'Dräger Polytron 8100 EC',
+            officialPageUrl: 'https://www.draeger.com/es_mx/Products/Draeger-Polytron-8100',
+            sourceUrls: ['https://www.draeger.com/es_mx/Products/Draeger-Polytron-8100'],
+            verificationStatus: 'pending',
+            published: true,
+        },
+        {
+            id: 'draeger-x-am-8000',
+            brandId: 'draeger',
+            familyIds: ['draeger-gas-detection'],
+            model: 'X-am 8000',
+            commercialName: 'Dräger X-am 8000',
+            shortDescription:
+                'Equipo portátil de detección multi-gas para inspección de calidad de aire y seguridad operacional.',
+            applicationSummary:
+                'Monitoreo de gases en campo para prevención de riesgos y cumplimiento de estándares de seguridad.',
+            measuredVariable: 'Gas / ambiente',
+            communicationTechnologies: ['Portátil', 'Alarma visual/acústica'],
+            mainSpecifications: ['Detector multi-gas', 'Portabilidad', 'Inspección de campo'],
+            officialImage: draegerXam8000Image,
+            officialImageAlt: 'Dräger X-am 8000',
+            officialPageUrl: 'https://www.draeger.com/es_mx/Products/X-am-8000',
+            sourceUrls: ['https://www.draeger.com/es_mx/Products/X-am-8000'],
+            verificationStatus: 'pending',
+            published: true,
+        },
+        {
+            id: 'draeger-saver-cf',
+            brandId: 'draeger',
+            familyIds: ['draeger-safety-systems'],
+            model: 'Saver CF',
+            commercialName: 'Dräger Saver CF',
+            shortDescription:
+                'Equipo de protección respiratoria Saver CF para trabajos con gases o ambientes confinados.',
+            applicationSummary:
+                'Protección personal para operarios en entornos con riesgo de exposición a contaminantes.',
+            measuredVariable: 'Seguridad respiratoria',
+            communicationTechnologies: ['Alarmas', 'Monitoreo de uso'],
+            mainSpecifications: ['Protección respiratoria', 'Trabajos críticos', 'Confinados'],
+            officialImage: draegerSaverCfImage,
+            officialImageAlt: 'Dräger Saver CF',
+            officialPageUrl: 'https://www.draeger.com/es_mx/Products/Saver-CF',
+            sourceUrls: ['https://www.draeger.com/es_mx/Products/Saver-CF'],
+            verificationStatus: 'pending',
             published: true,
         },
     ],
